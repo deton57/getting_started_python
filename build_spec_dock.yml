@@ -10,7 +10,7 @@ env:
 
 steps:
   - type: Command
-    name: "Pack the product in zip format"
+    name: "Pack the product in container format"
     command: |
       docker build . -t gs_python:1.0
       version=`cat ./version.txt`
